@@ -38,6 +38,10 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+
+         $('#btnD').click(function(e) {
+            btnCClick(e);
+        });
         init();
     });
     
@@ -161,6 +165,7 @@
         $('#btnA').prop('disabled', false);
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
+        $('#btnD').prop('disabled', false);
         
     }
 
@@ -206,6 +211,11 @@
         
     }
     
+    // ButtonD（restart）がクリックされた時の処理
+    function btnDClick(e){
+      
+    }
+
  
     // 繰り返し実行する処理
     function timer(){  
@@ -239,6 +249,7 @@
     <button id="btnA">ButtonA</button>  
     <button id="btnB">ButtonB</button>  
     <button id="btnC">ButtonC</button>  
+     <button id="btnD">ButtonD</button>
     <input type="number" id="minute" value=3 >
     <input type="number" id="second" value=0 >
 </body>
