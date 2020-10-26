@@ -157,6 +157,7 @@
     var active = false;
     var startTime = 0;
     var period = 0;
+   // var count = 0;
 
 
     
@@ -174,7 +175,7 @@
         var canvas = $("#mycanvas")[0];
         var ctx = canvas.getContext("2d");
         var img = new Image();
-        img.src = "ksuisbg.gif";
+        img.src = "PAK86_komorebitohizashi_TP_V4.jpg";
         img.onload = function() {
           ctx.drawImage(img, 0, 0, 300, 300);
         }
@@ -198,7 +199,6 @@
     function btnBClick(e){
       active = false;
         
-        
     }
 
     // ButtonCがクリックされた時の処理
@@ -212,8 +212,11 @@
     }
     
     // ButtonD（restart）がクリックされた時の処理
-    function btnDClick(e){
-      
+    function btnDClick(){
+     /* active = false;
+      var rest = 0;
+       $("#time").html("経過時間：0");
+        $("#remain").html("残り時間： " + rest);*/
     }
 
  
@@ -226,6 +229,8 @@
         $("#remain").html("残り時間： " + rest);
         analog(rest);
       }
+
+      //count += 1;
 
       if (rest <= 0) {
         active = false;
