@@ -42,8 +42,7 @@
     
     #btnA {
         font-size: 20px;
-        position:absolute; top:380px; left:2%; width:43%; height:60px; 
-        background-color: yellow;
+        position:absolute; top:380px; left:2%; width:43%; height:60px;
         color: green;
     }
     
@@ -53,13 +52,14 @@
     }
 
     #btnC {
-        font-size: 10px;
+        font-size: 15px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
     }
     
     #btnD {
-        font-size: 20px;
+        font-size: 25px;
         position:absolute; top:550px; left:30%; width:50%; height:55px; 
+        color: red;
     }
 
     #minute {
@@ -75,7 +75,7 @@
     input[type=number] {text-align: right;}
 
     body {
-      background: skyblue;
+      background: rgb(145, 252, 238);
     }
 
     button {
